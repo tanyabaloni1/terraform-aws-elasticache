@@ -55,7 +55,7 @@ resource "aws_elasticache_cluster" "memcached" {
   port                          = var.port
   parameter_group_name          = var.parameter_group_name
   subnet_group_name             = aws_elasticache_subnet_group.redis_subnet_group.id
- # security_group_names          = var.security_group_names
+  security_group_names          = var.security_group_names
   security_group_ids            = [aws_security_group.redis_security_group.id]
   maintenance_window            = var.maintenance_window
   notification_topic_arn        = var.notification_topic_arn
