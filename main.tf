@@ -33,7 +33,7 @@ resource "aws_elasticache_replication_group" "redis" {
   port                          = var.port
   parameter_group_name          = var.parameter_group_name
   subnet_group_name             = aws_elasticache_subnet_group.redis_subnet_group.id
-  security_group_names          = var.security_group_names
+#  security_group_names          = var.security_group_names
   security_group_ids            = [aws_security_group.redis_security_group.id]
   snapshot_arns                 = var.snapshot_arns
   snapshot_name                 = var.snapshot_name
