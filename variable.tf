@@ -44,7 +44,7 @@ variable "clusters" {
 
 variable "failover" {
   type    = bool
-  default = false
+  default = true
 }
 
 variable "multi_az_enabled" {
