@@ -151,7 +151,7 @@ variable "auth_token" {
   default     = null
 }
 
-variable "security_group_names" {
+variable "security_group_name" {
   description = "A list of cache security group names to associate with this replication group"
   type        = list(string)
   default     = []
